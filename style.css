@@ -1,0 +1,125 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+     ..primary:#536942;
+     ..secondary:#ffd936;
+     ..white:#fefefef;
+    
+}
+body{
+    font-family: "om sans", sans-serif;
+    color: var(..primary);
+}
+#main{
+    background-image: url(nature1.jpg);
+    min-height: 90vh;
+    background-position: bottom center;
+    background-size: cover;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1200px;
+    padding: 16px;
+    margin: auto;
+}
+.section{
+    margin: 80px auto;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    gap: 28px;
+    align-items: center;
+}   
+.nav-list a{
+    color: white;
+}
+.btn{
+    padding: 12px 20px;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    border-radius: spx;
+}
+.btn. .secondary{
+    border: 1px solid var(white)
+    color: var(white);
+    font-weight:bold;
+}
+.btn.primary{
+   border: none;
+   background: var(..secondary);
+   color: var(..primary)
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 90px;
+   color: white;
+}
+.main-content .intro-heading {
+      font-size: 50px;
+}     
+.main-content .main-heading{
+    font-size: 110px;
+    margin-top: -10px;
+}
+.main-content p{
+    max-width: 250px;
+    margin-bottom: 10px;
+}
+.section-title{
+    font-size: 50px;
+    text-align: center;
+}
+.section-title .line{
+    width: 150px;
+    height: 4px;
+    border-radius: 10px;
+    background: var(..secondary);
+    margin:auto;
+}
+.services{
+    margin-top: 40px;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+.service{
+    width: 300px;
+}
+.service img{
+    max-width: 100%;
+}
+@media screen and (max-width:520px){
+    .nav-list{
+        flex-direction: column;
+        background: gray;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 80%;
+        height: 100vh;
+        padding-top: 80px;
+    }
+    .nav-list li :not(:last-child){
+        text-align: left;
+        width: 100%;
+        padding: 10px 30px;
+        border-bottom:  1px solid white;
+    }
+}
